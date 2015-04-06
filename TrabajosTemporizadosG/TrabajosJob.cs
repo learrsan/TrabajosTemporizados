@@ -18,6 +18,9 @@ namespace TrabajosTemporizadosG
 
         public TrabajosJob(String name, SPWebApplication app, SPServer server, SPJobLockType bloqueo)
             : base(name, app, server, bloqueo)
+        {}
+
+        public override void Execute(Guid targetInstanceId)
         {
             using (SPSite sitio = new SPSite("http://spcursovm"))
             {
@@ -29,12 +32,13 @@ namespace TrabajosTemporizadosG
                     {
                         if (item["finalizado"] == "Yes")
                         {
-                            
+                            item.Delete();
+                            lista.Update();
+
                         }
                     }
                 }
             }
-
         }
     }
 }
