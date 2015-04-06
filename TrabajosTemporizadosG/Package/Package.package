@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="325270d5-012f-4f06-9dab-1136670fc380" 
-        solutionId="325270d5-012f-4f06-9dab-1136670fc380" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="TrabajosTemporizadosG"
-        sharePointProductVersion="15.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="325270d5-012f-4f06-9dab-1136670fc380" solutionId="325270d5-012f-4f06-9dab-1136670fc380" resetWebServer="false" sharePointProductVersion="15.0" name="TrabajosTemporizadosG" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="76e99dfb-9bbb-4817-acb4-a550591100e1" />
+  </features>
 </package>
